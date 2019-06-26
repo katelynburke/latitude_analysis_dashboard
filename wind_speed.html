@@ -1,0 +1,106 @@
+<!-- Unit 12 | Assignment - Web Visualization Dashboard (Latitude) -->
+
+<!-- Wind Speed Visualizations -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Wind Speed</title>
+
+<!-- Bring in our bootstrap stylesheet -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Nav bar -->
+</head>
+<body class="d-flex flex-column h-100 body-color">
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="nav-logo">
+        <a class="navbar-brand" href="index.html">Lattitude</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="w-100">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparisons.html">Comparison</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!--Main part of page-->
+<main class="body-color flex-shrink-0">
+  <div class="container">
+    <div class="row d-flex align-items-stretch h-100">
+      <div class="col-12 col-md-8 d-flex flex-column">
+        <div class="d-flex flex-column my-3 p-3 bg-white rounded shadow-sm w-100">
+          <h1 class="display-1 aqua">Wind Speed</h1>
+          <div>
+            <hr>
+            <div class="text-center">
+              <img src="images/windspeedplot2.png" alt="wind speed plot"  hspace="15">
+            </div>
+            <div class="mt-1">
+              <p class= "font-fix" id="para-font mt-0">The City Latitude vs. WindSpeed (miles per hour) Scatter Plot shows that the majority of cities (across all latitudes) have wind speeds under 20 miles per hour. It is interesting to point out that only one city (out of over 500 cities) on the plot had wind speeds above 40 miles per hour. This city falls at approximately 70 degrees latitude. Cities with very high wind speeds (above 20 miles per hour) tend to be away from the equator (0 degrees latitude). This data could vary greatly depending on the month the data is collected.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 d-flex flex-column">
+          <div class="my-3 p-3 bg-white rounded shadow-sm w-100">
+            <h1 class="display-1 aqua">Visualizations</h1> 
+            <hr>
+            <div class="container">
+              <div class="row text-align-center">
+                <div class="col-sm-6">
+                  <div class="text-center">
+                    <img class="img-fluid mx-auto mb-4" src="images\humidityplot2.png" alt="humidity plot" height="175" width="225" hspace="15">
+                    <img class="img-fluid mx-auto" src="images\windspeedplot2.png" alt="wind speed plot" height="175" width="225" hspace="15">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="text-center">
+                    <img class="img-fluid mx-auto mb-4" src="images\temperatureplot2.png" alt="temperature plot" height="175" width="225" hspace="15">
+                    <img class="img-fluid mx-auto" src="images\cloudinessplot2.png" alt="cloudiness plot" height="175" width="225" hspace="15">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Footer -->
+<footer class="footer mt-auto py-3">
+  <p>Katelyn Burke - Northwestern Data Science Bootcamp</p>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
